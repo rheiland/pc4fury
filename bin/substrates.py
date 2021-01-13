@@ -397,10 +397,10 @@ class SubstrateTab(object):
                 print('session_id = ',session_id)
                 user_id = os.getenv('USER')
                 print('user_id = ',user_id)
-                # fury_data_path_str = "/data/tools/shared/" + user_id + "/fury/" + session_id
+                fury_data_path_str = "/data/tools/shared/" + user_id + "/fury/" + session_id
 
                 # dummy to test locally
-                fury_data_path_str = "/tmp/" + user_id + "/fury" 
+                # fury_data_path_str = "/tmp/" + user_id + "/fury" 
                 print("fury_data_path_str = ",fury_data_path_str)
 
                 os.makedirs(fury_data_path_str, exist_ok=True)
